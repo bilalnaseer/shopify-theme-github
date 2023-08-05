@@ -52,7 +52,7 @@
         "767db8f2-498c-4d48-9617-614fd035e45d": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "{% if product.metafields.my_fields.custom.size_chart.value != blank %} <p>Size chart {{ product.metafields.my_fields.custom.size_chart | image_url: width: 350 | image_tag  }} <\/p> {% endif %}"
+            "custom_liquid": "{% if product.metafields.custom.size_chart.value != blank %} <p>Size chart {{ product.metafields.custom.size_chart | image_url: width: 350 | image_tag  }} <\/p> {% endif %}"
           }
         }
       },
