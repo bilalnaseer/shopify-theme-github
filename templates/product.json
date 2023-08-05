@@ -49,10 +49,13 @@
             "share_label": "Share"
           }
         },
-        "767db8f2-498c-4d48-9617-614fd035e45d": {
-          "type": "custom_liquid",
+        "469aa5e6-d5d1-4e9c-95cb-b3d4b23cd1a5": {
+          "type": "collapsible_tab",
           "settings": {
-            "custom_liquid": "{% if product.metafields.custom.size_chart.value != blank %} <p>Size chart {{ product.metafields.custom.size_chart | image_url: width: 350 | image_tag  }} <\/p> {% endif %}"
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "content": "{{ products.metafield.custom.size_chart \n}}\n\n{% assign image_url = products.metafield.custom.size_chart  %}\n{% if image_url != blank %} \n <img src=\"{{ image_url.value | image_url }}\">\n{% endif %}",
+            "page": ""
           }
         }
       },
@@ -65,7 +68,7 @@
         "buy_buttons",
         "description",
         "share",
-        "767db8f2-498c-4d48-9617-614fd035e45d"
+        "469aa5e6-d5d1-4e9c-95cb-b3d4b23cd1a5"
       ],
       "settings": {
         "enable_sticky_info": true,
