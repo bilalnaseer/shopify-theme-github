@@ -49,13 +49,10 @@
             "share_label": "Share"
           }
         },
-        "6c45f80e-fbdc-42f3-a6cf-2f34c44d5175": {
-          "type": "collapsible_tab",
+        "767db8f2-498c-4d48-9617-614fd035e45d": {
+          "type": "custom_liquid",
           "settings": {
-            "heading": "Size Chart",
-            "icon": "ruler",
-            "content": "",
-            "page": ""
+            "custom_liquid": "{% if product.metafields.my_fields.custom.size_chart.value != blank %} <p>Size chart {{ product.metafields.my_fields.custom.size_chart | image_url: width: 350 | image_tag  }} <\/p> {% endif %}"
           }
         }
       },
@@ -68,7 +65,7 @@
         "buy_buttons",
         "description",
         "share",
-        "6c45f80e-fbdc-42f3-a6cf-2f34c44d5175"
+        "767db8f2-498c-4d48-9617-614fd035e45d"
       ],
       "settings": {
         "enable_sticky_info": true,
