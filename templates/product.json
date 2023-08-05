@@ -31,6 +31,15 @@
           "settings": {
           }
         },
+        "469aa5e6-d5d1-4e9c-95cb-b3d4b23cd1a5": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Size Chart",
+            "icon": "ruler",
+            "content": "{% assign image_url = product.metafields.custom.size_chart  %}\n{% if image_url != blank %} \n <img src=\"{{ image_url.value | image_url }}\">\n{% endif %}",
+            "page": ""
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -48,15 +57,6 @@
           "settings": {
             "share_label": "Share"
           }
-        },
-        "469aa5e6-d5d1-4e9c-95cb-b3d4b23cd1a5": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "content": "{{ products.metafield.custom.size_chart \n}}\n\n{% assign image_url = products.metafield.custom.size_chart  %}\n{% if image_url != blank %} \n <img src=\"{{ image_url.value | image_url }}\">\n{% endif %}",
-            "page": ""
-          }
         }
       },
       "block_order": [
@@ -65,10 +65,10 @@
         "price",
         "variant_picker",
         "quantity_selector",
+        "469aa5e6-d5d1-4e9c-95cb-b3d4b23cd1a5",
         "buy_buttons",
         "description",
-        "share",
-        "469aa5e6-d5d1-4e9c-95cb-b3d4b23cd1a5"
+        "share"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -83,16 +83,6 @@
         "enable_video_looping": false,
         "padding_top": 36,
         "padding_bottom": 12
-      }
-    },
-    "a1f0a196-26d0-4cc6-a464-b1b58aeb0c6a": {
-      "type": "quick-order-list",
-      "settings": {
-        "show_image": false,
-        "show_sku": false,
-        "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36
       }
     },
     "related-products": {
@@ -116,7 +106,6 @@
   },
   "order": [
     "main",
-    "a1f0a196-26d0-4cc6-a464-b1b58aeb0c6a",
     "related-products"
   ]
 }
