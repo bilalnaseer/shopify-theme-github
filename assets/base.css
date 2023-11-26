@@ -3511,28 +3511,3 @@ details-disclosure > details {
     --border-offset: 0px; /* Prevent the border from growing on buttons when this effect is on. */
   }
 }
-
-/* testing snow effect for youtube content */
-
-body {
-   position: relative;
-	background:#d2d2d2;
-}
-body:after {
-   content: '';
-   display: block;
-   position: absolute;
-   z-index: 2;
-   top: 0;
-   left: 0;
-   right: 0;
-   bottom: 0;
-   pointer-events: none;
-   background-image: url('https://cdn.shopify.com/s/files/1/0601/0185/3358/files/snow1.webp?v=1700985285'), url('https://cdn.shopify.com/s/files/1/0601/0185/3358/files/snow3.webp?v=1700985285');
-    animation: snow 10s linear infinite;
-}
-@keyframes snow {
- 0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
- 50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
- 100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
-}
